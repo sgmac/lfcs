@@ -15,3 +15,10 @@ mail_priviliged_group = <SAME_GROUP_POSTFIX>
 
 - Enable ssl and add keys  `/etc/dovecot/conf.d/10-ssl.conf`
 - Restart service and check they are running `110,143,993,995`
+
+## Troubleshhoting
+
+- Check `/var/log/mail.log` for errors or `journalctl -xu dovecot`
+- In the `/etc/dovecot/dovecot.conf` check `protocols=imap` 
+- Check port listening `ss -putan`
+- Verify conncetion `mutt -f imap://user@localhost`
