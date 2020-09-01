@@ -10,6 +10,20 @@
 - Another command `repquota -a`
 - For period time `edquota -t` 
 
+## XFS
+- Add `uquota` to `/etc/fstab`
+- Umount and mount
+- Enable quota
+
+```
+xfs_quota -x -c 'limit bsoft=10m bhard=20m linda' /path/mountpoint
+# check report
+xfs_quota -x  -c report /path/mountpoint
+```
+
+- This is bad approach, but you ensure that settings these permissions `chmod 777 /path/mountpoint` works
+
+
 
 ## EXT4 quotas
 

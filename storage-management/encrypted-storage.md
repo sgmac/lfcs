@@ -9,3 +9,9 @@
 - `cryptsetup luksClose luks-vol1` (Enter the password)
 
 
+## Crypttab
+
+/dev/mapper/secret /secret xfs defaults 0 0 
+`
+secret /dev/sdc3
+``
