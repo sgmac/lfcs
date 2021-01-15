@@ -15,5 +15,10 @@ System V, you can find out `runlevel`
 
 - Enter grub, go do the end fo the `linux /boot/vmlinuz...` and add the runlevel
 
+i``
+ linux   /boot/vmlinuz-5.4.0-59-generic root=UUID=d1ef36ef-2258-4435-810a-aaa72da61785 ro  acpi_enforce_resou    rces=lax amd_iommu=on 3
+```
+
+
 
 

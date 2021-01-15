@@ -87,3 +87,11 @@ local-fs.target
 -  `systemctl start graphical.target`
 -  `systemctl isolate emergency.target`
 
+
+```
+$ runlevel
+N 5 
+$ sudo systemctl systemctl set-default runlevel
+runlevel0.target  runlevel1.target  runlevel2.target  runlevel3.target  runlevel4.target  runlevel5.target  runlevel6.target
+```
+

@@ -1,6 +1,6 @@
 # Configure manage VMs
 
-- Install `apt install qemu-kvm libvirtd virtins virt-viewer`
+- Install `apt install qemu-kvm libvirt-daemon-system virtins virt-viewer`
 - `virt-install --name=tinyalpine --vpus=1 --memory=1024 --cdrom=image.sio --disk  size=5`
 - `virsh list --all`
 - `virsh edit tinyalpine`
