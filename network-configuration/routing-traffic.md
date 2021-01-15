@@ -14,3 +14,5 @@ ip route del 10.40.37.0/24 proto static metric 10 via inet 192.168.1.69 dev eth0
 - Verify with traceroute
 
 
+- The lowest the metric goes through this route
+`ip route add 10.40.37.0/24 proto static metric 10 via inet 192.168.1.1`
